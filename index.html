@@ -78,10 +78,10 @@
         var shaderMaterial; 
         // Load the 2D image texture
         var textureLoader = new THREE.TextureLoader();
-        textureLoader.load('/new_test/test2_AWB.png', function (texture2D) {
+        textureLoader.load('new_test/test2_AWB.png', function (texture2D) {
             // Load the depth map texture
-            textureLoader.load('/new_test/test2_depth.png', function (depthTexture) {
-                textureLoader.load('/new_test/results_brdf14_light10_brdf7_light10/2_envmap1.png', function (secondTexture) {
+            textureLoader.load('new_test/test2_depth.png', function (depthTexture) {
+                textureLoader.load('new_test/results_brdf14_light10_brdf7_light10/2_envmap1.png', function (secondTexture) {
                     // Create a plane geometry
                     var geometry = new THREE.PlaneGeometry(19, 10.8, 32, 32);
 
@@ -135,7 +135,7 @@
         var distance1  = 3
 		// Create a cube geometry
         var geometry = new THREE.SphereGeometry(adjustSize(20-distance1, 1), 32, 32);
-        var envMap1 = textureLoader.load('/new_test/test2_env1.png');
+        var envMap1 = textureLoader.load('new_test/test2_env1.png');
         // Create a standard material
 		var material = new THREE.MeshStandardMaterial({
             roughness: 0.5,
@@ -168,7 +168,7 @@
 
 
         var geometry = new THREE.SphereGeometry(adjustSize(20-distance1, 1), 32, 32);
-        var envMap2 = textureLoader.load('/new_test/test2_env2.png');
+        var envMap2 = textureLoader.load('new_test/test2_env2.png');
         // Create a standard material
 		var material2 = new THREE.MeshStandardMaterial({
             roughness: 0.5,
@@ -188,7 +188,7 @@
         scene.add(sphere2);
 
 		// Load the texture
-        var texture = textureLoader.load('/new_test/test2_color.png');
+        var texture = textureLoader.load('new_test/test2_color.png');
 
         // Create the plane geometry
         var planeGeometry = new THREE.PlaneGeometry(19, 10.8); // Set the size of the plane
